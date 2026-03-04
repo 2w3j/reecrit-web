@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REECRIT STUDIO | 내 삶의 이야기를 새롭게 편집하다</title>
     <link rel="icon" href="image_45815f.png">
+    
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         :root {
             --bg-color: #000000;
@@ -57,9 +61,9 @@
             letter-spacing: 0.05rem;
         }
 
-        /* Brand Story Section */
+        /* Brand Story Section - 여백 절반으로 축소 */
         .story {
-            padding: 120px 20px;
+            padding: 60px 20px; 
             background-color: #080808;
             text-align: center;
         }
@@ -68,7 +72,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 1.5rem;
             letter-spacing: 0.2rem;
-            margin-bottom: 50px;
+            margin-bottom: 30px; /* 기존 50px -> 30px */
             text-transform: uppercase;
             color: #888;
         }
@@ -82,20 +86,20 @@
         }
 
         .story-content p {
-            margin-bottom: 30px;
+            margin-bottom: 15px; /* 기존 30px -> 15px */
         }
 
         .story-quote {
             font-size: 1.4rem;
             font-weight: 500;
             color: #fff;
-            margin: 50px 0;
+            margin: 25px 0; /* 기존 50px -> 25px */
             font-style: italic;
         }
 
-        /* Value Section */
+        /* Value Section - 여백 절반으로 축소 */
         .values {
-            padding: 120px 20px;
+            padding: 60px 20px; /* 기존 120px -> 60px */
             max-width: 1100px;
             margin: 0 auto;
         }
@@ -103,12 +107,12 @@
         .value-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            gap: 30px;
         }
 
         .value-card {
             background: var(--card-bg);
-            padding: 50px 40px;
+            padding: 40px 30px;
             border-radius: 2px;
             border: 1px solid #222;
             transition: all 0.4s ease;
@@ -122,7 +126,7 @@
         .value-card h3 {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.2rem;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             letter-spacing: 0.1rem;
             color: #fff;
         }
@@ -131,11 +135,12 @@
             font-size: 0.95rem;
             opacity: 0.7;
             font-weight: 300;
+            margin: 0;
         }
 
-        /* Social Channels */
+        /* Social Channels - 여백 축소 및 아이콘 디자인 */
         .social-container {
-            padding: 120px 20px;
+            padding: 60px 20px; /* 기존 120px -> 60px */
             text-align: center;
             background: #050505;
         }
@@ -143,30 +148,37 @@
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 25px;
             flex-wrap: wrap;
-            margin-top: 50px;
+            margin-top: 30px; /* 기존 50px -> 30px */
         }
 
+        /* ⭐️ SNS 아이콘 버튼 스타일 */
         .sns-btn {
-            text-decoration: none;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #222;
             color: var(--text-color);
-            padding: 15px 40px;
-            border: 1px solid #333;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.85rem;
-            letter-spacing: 0.1rem;
+            font-size: 1.8rem;
+            text-decoration: none;
             transition: all 0.3s ease;
+            border: 1px solid #444;
         }
 
         .sns-btn:hover {
             background: var(--text-color);
             color: var(--bg-color);
+            transform: translateY(-5px);
+            border-color: var(--text-color);
         }
 
         footer {
             text-align: center;
-            padding: 80px 20px;
+            padding: 50px 20px;
             font-size: 0.75rem;
             opacity: 0.4;
             letter-spacing: 0.05rem;
@@ -176,7 +188,7 @@
             .hero h1 { font-size: 1.8rem; }
             .story-content { font-size: 1rem; }
             .story-quote { font-size: 1.2rem; }
-            .sns-btn { width: 100%; max-width: 250px; }
+            .sns-btn { width: 50px; height: 50px; font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -193,12 +205,14 @@
     <section class="story">
         <h2 class="section-title">Brand Story</h2>
         <div class="story-content">
-            <p>우리는 누구나 자기 안에 자신만의 이야기를 하나씩 품고 살아갑니다.<br>하지만 때로는 과거의 수많은 일들 중 좋지 않았던 조각들만 모아 스스로를 우울한 에피소드 속에 가두기도 하죠.</p>
+            <p>우리는 누구나 자기 안에 자신만의 이야기를 하나씩 품고 살아갑니다.</p>
+            <p>하지만 때로는 과거의 수많은 일들 중 좋지 않았던 조각들만 모아 스스로를 우울한 에피소드 속에 가두기도 하죠.</p>
             <p>‘나는 원래 잘 안됐으니까, 앞으로도 안 될 거야.’<br>그렇게 굳게 믿으며 비관적인 이야기로 현재와 미래를 채우고 있지는 않나요?</p>
             
             <div class="story-quote">"과거에 즐거웠던 일, 행복했던 순간은 없었나요?"</div>
             
-            <p>REECRIT은 당신에게 묻습니다.<br>우리는 당신이 잊고 있던 빛나는 조각들과 행복했던 순간들을 하나둘씩 찾아내어,<br>비관적이기만 했던 삶의 이야기를 전혀 다른 희망의 서사로 새롭게 써 내려갈 수 있도록 돕습니다.</p>
+            <p>REECRIT은 당신에게 묻습니다.</p>
+            <p>우리는 당신이 잊고 있던 빛나는 조각들과 행복했던 순간들을 하나둘씩 찾아내어,<br>비관적이기만 했던 삶의 이야기를 전혀 다른 희망의 서사로 새롭게 써 내려갈 수 있도록 돕습니다.</p>
         </div>
     </section>
 
@@ -223,9 +237,15 @@
     <section class="social-container">
         <h2 class="section-title">Connect With Us</h2>
         <div class="social-links">
-            <a href="https://instagram.com/reecritstudio" class="sns-btn" target="_blank">INSTAGRAM</a>
-            <a href="https://tiktok.com/@reecritstudio" class="sns-btn" target="_blank">TIKTOK</a>
-            <a href="https://youtube.com/@reecrit" class="sns-btn" target="_blank">YOUTUBE</a>
+            <a href="https://instagram.com/reecritstudio" class="sns-btn" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com/@reecritstudio" class="sns-btn" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://youtube.com/@reecrit" class="sns-btn" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
         </div>
     </section>
 
