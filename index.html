@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REECRIT STUDIO | Official</title>
+    <link rel="icon" href="image_45815f.png"> <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --accent-color: #ffffff;
+            --card-bg: #111111;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.7;
+            word-break: keep-all;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .logo-container img {
+            width: 180px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 0.5rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.7;
+            font-weight: 300;
+            margin-top: 15px;
+        }
+
+        .values {
+            padding: 100px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 0.2rem;
+            margin-bottom: 60px;
+            text-transform: uppercase;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .value-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 2px;
+            border: 1px solid #222;
+            transition: all 0.4s ease;
+        }
+
+        .value-card:hover {
+            border-color: var(--accent-color);
+            background: #080808;
+        }
+
+        .value-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .social-container {
+            padding: 100px 20px;
+            text-align: center;
+            background: #050505;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .sns-btn {
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 12px 35px;
+            border: 1px solid #333;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .sns-btn:hover {
+            background: var(--text-color);
+            color: var(--bg-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 0.75rem;
+            opacity: 0.4;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .sns-btn { width: 100%; max-width: 250px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="logo-container">
+            <img src="image_45815f.png" alt="REECRIT STUDIO">
+        </div>
+        <h1>REECRIT STUDIO</h1>
+        <p>Re-define, Re-create: 우리의 가치를 다시 쓰다</p>
+    </section>
+
+    <section class="values">
+        <h2 class="section-title">Core Values</h2>
+        <div class="value-grid">
+            <div class="value-card">
+                <h3>AUTHENTICITY</h3>
+                <p>본연의 가치를 깊이 있게 탐구하며, 인위적이지 않은 리크리트만의 진정성을 콘텐츠에 담아냅니다.</p>
+            </div>
+            <div class="value-card">
+                <h3>INNOVATION</h3>
+                <p>익숙함 속에 숨겨진 새로운 관점을 발견하고, 기존의 틀을 깨는 창의적인 실험을 멈추지 않습니다.</p>
+            </div>
+            <div class="value-card">
+                <h3>CONNECTION</h3>
+                <p>단순한 영상 제작을 넘어, 브랜드와 사람 사이의 의미 있는 연결고리를 만드는 것을 지향합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-container">
+        <h2 class="section-title">Channels</h2>
+        <div class="social-links">
+            <a href="https://instagram.com/reecritstudio" class="sns-btn" target="_blank">INSTAGRAM</a>
+            <a href="https://tiktok.com/@reecritstudio" class="sns-btn" target="_blank">TIKTOK</a>
+            <a href="https://youtube.com/@reecrit" class="sns-btn" target="_blank">YOUTUBE</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 REECRIT STUDIO. ALL RIGHTS RESERVED.<br>
+        WWW.REECRITSTUDIO.COM
+    </footer>
+
+</body>
+</html>
